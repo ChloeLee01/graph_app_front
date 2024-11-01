@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Icons } from "../../assets/icons";
 
 const ModeCtrl = () => {
   const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')}, [darkMode])
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);
