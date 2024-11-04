@@ -11,9 +11,9 @@ const AppbarLang = () => {
 
   const handleDropListEnable = () => setIsDropListOpen(!isDropListOpen);
   const countrySectedHandler = (country, flag, lang) => {
-    setSelectedCountry({country, flag, lang});
+    setSelectedCountry({ country, flag, lang });
     setIsDropListOpen(false);
-  }
+  };
 
   useEffect(() => {
     const fetchCountriesData = async () => {
@@ -22,7 +22,7 @@ const AppbarLang = () => {
 
         const sortedCountries = response.data.sort((a, b) =>
           a.name.common.localeCompare(b.name.common)
-        );
+        ); // 문자열 오름차순 정열: localeCompare 이용(영어 외 다른 언어, 숫자도 가능, 숫자는 sort()만으로도 오름차순 정렬을 할 수 있다.)
 
         setCountries(sortedCountries);
 
