@@ -5,7 +5,6 @@ import HeadTitle from "./HeadTitle";
 import {
   BarChart,
   Bar,
-  Rectangle,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -16,7 +15,7 @@ import {
 
 const formatYAxisLabel = (value) => `${value}k`;
 
-const formatTooltipValue = (value) => `${value} Sales`
+const formatTooltipValue = (value) => `${value} Sales`;
 
 const TotalRevenue = () => {
   const state = useSelector((state) => state.apis.revenueData);
@@ -26,7 +25,7 @@ const TotalRevenue = () => {
     dispatch(fetchRevenue());
   }, [dispatch]);
 
-  console.log(state);
+  // console.log(state);
 
   return (
     <div className="block-wrap mt-[14px]">
@@ -78,12 +77,12 @@ const TotalRevenue = () => {
               tickFormatter={formatYAxisLabel}
               axisLine={false}
             />
-            <Tooltip  formatter={formatTooltipValue}/>
+            <Tooltip formatter={formatTooltipValue} />
             <Legend
-            iconType="circle"
-            iconSize={10}
-            style={{paddingTop: "10px"}}
-             />
+              iconType="circle"
+              iconSize={10}
+              style={{ paddingTop: "10px" }}
+            />
             <Bar
               dataKey="online"
               fill="#0095ff"
@@ -93,12 +92,12 @@ const TotalRevenue = () => {
               barSize={18}
             />
             <Bar
-               dataKey="offline"
-               fill="#00e096"
-               activeBar={false}
-               isAnimationActive={false}
-               radius={[4, 4, 0, 0]}
-               barSize={18}
+              dataKey="offline"
+              fill="#00e096"
+              activeBar={false}
+              isAnimationActive={false}
+              radius={[4, 4, 0, 0]}
+              barSize={18}
             />
           </BarChart>
         </ResponsiveContainer>

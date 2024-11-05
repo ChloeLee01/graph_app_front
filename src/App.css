@@ -5,6 +5,12 @@
   font-family: inherit;
 }
 
+.App {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 body {
   font-weight: 400;
   font-size: 1rem;
@@ -39,7 +45,7 @@ a {
   text-decoration: none;
 }
 
-/* Each Boc Commin style */
+/* Each Box Common style */
 .block-wrap {
   border-radius: 6px;
   padding: 20px;
@@ -99,4 +105,18 @@ a {
   padding-left: 4px;
   font-size: 14px;
   margin-top: 5px;
+}
+
+/* Top Products common table style */
+.tbl-title {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #f0f9ff;
+  font-weight: 400;
+  text-align: left;
+}
+
+.tbl-data {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
 }

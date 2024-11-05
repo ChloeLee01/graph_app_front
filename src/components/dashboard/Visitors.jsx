@@ -30,6 +30,7 @@ const CustomTooltip = ({ payload }) => {
   return (
     <div className="custom-recharts-tooltip">
       <p className="recharts-tooltip-label">{payload[0].payload?.month}</p>
+      
       <ul className="recharts-tooltip-item-list">
         {payload.map((item, index) => (
           <li key={index}>{formatTooltipValue(item.name, item.value)}</li>
