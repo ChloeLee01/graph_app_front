@@ -54,7 +54,7 @@ const Visitors = () => {
 
   // console.log(state);
   return (
-    <div className="block-wrap">
+    <div className="block-wrap w-full">
       <HeadTitle title="Visitors Insights" />
       <div className="line-chart w-full h-[230px]">
         <ResponsiveContainer width="100%" height="100%">

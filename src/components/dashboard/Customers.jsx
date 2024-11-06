@@ -70,7 +70,7 @@ const Customers = () => {
   };
 
   return (
-    <div className="customer-chart block-wrap mt-[14px] ml-[14px]">
+    <div className="customer-chart block-wrap mt-[14px] lg:ml-[14px] w-[calc(50%-7px)] ml-[14px] lg:w-auto">
       <HeadTitle title="Customers Satisfaction" />
       <div className="area-chart w-full h-[250px]">
         <ResponsiveContainer width="100%" height="100%">

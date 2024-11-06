@@ -28,7 +28,7 @@ const TotalRevenue = () => {
   // console.log(state);
 
   return (
-    <div className="block-wrap mt-[14px]">
+    <div className="block-wrap mt-[14px] w-[calc(50%-7px)] lg:w-auto">
       <HeadTitle title="Total Revenue" />
 
       <div className="bar-chart w-full h-[250px] mt-6">

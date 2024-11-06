@@ -17,12 +17,12 @@ const SalesMap = () => {
 
   const findByCountryID = (countryId) => {
     const matchedCountry = state?.find(
-      (country) => country.country_id == countryId
+      (country) => country.country_id === countryId
     );
     return matchedCountry ? matchedCountry.fill_color : "#ececec";
   };
   return (
-    <div className="block-wrap my-[14px] ml-[14px]">
+    <div className="block-wrap lg:my-[14px] lg:ml-[14px] sm:w-[calc(50%-7px)] lg:w-auto w-full">
       <HeadTitle title="Sales Mapping by Country" />
       <div className="map-chart">
         <ComposableMap
